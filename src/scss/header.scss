@@ -1,8 +1,147 @@
-html{
-  scroll-behavior: smooth;
-}
-body {
-  max-width: 1920px;
-  min-width: 320px;
-  width: 100%;
+$fontsCaveat : 'Caveat', cursive;
+$fontsComfortaa : 'Comfortaa', cursive;
+$fontsInter : 'Inter', sans-serif;
+$bgColor : linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+$bgColor : linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+header{
+ .bg-header{
+   background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+   max-height: 320px;
+   height: 100vh;
+ }
+  .row-header{
+    justify-content: space-between;
+  }
+  .logo{
+    margin-top: 65px;
+  }
+  .social_link{
+    margin-top: 50px;
+    div{
+      display: inline-block;
+      margin: 0 10px;
+      svg{
+        vertical-align: bottom;
+      }
+    }
+    .phone{
+      margin: 0;
+      text-align: center;
+      a{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px;
+        border: solid 1px #ffffff;
+        border-radius: 30px;
+        filter: drop-shadow(0px 7px 20px rgba(243, 65, 150, 0.25));
+      }
+    }
+  }
+
+  .denim_booty{
+      text-align: center;
+      max-width: 60%;
+      margin-top: 110px;
+      .denim_booty_text,.denim_booty_title{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 71px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+      }
+      .denim_booty_text{
+        font-size: 14px;
+        line-height: 16px;
+      }
+  }
+
+  .total{
+    text-align: center;
+    max-width: 60%;
+    width: 100%;
+    p{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 71px;
+      color: #ED2C68;
+      margin: 0;
+    }
+    svg{
+      margin-top: 40px;
+    }
+    .delivery{
+      font-family: $fontsInter;
+      font-size: 18px;
+      line-height: 22px;
+      color: #30B03D;
+    }
+    a{
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      text-decoration: none;
+      outline: none;
+      max-width: 330px;
+      width: 100%;
+      height: 50px;
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      color: #FFFFFF;
+      background: linear-gradient(80.88deg,#FC5C7A 98.74%,#E91E63 1.97%);
+      padding: 2px;
+      box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+      border-radius: 30px;
+      display: block;
+      span{
+        padding-top: 12px;
+        height: 100%;
+        border-radius: 30px;
+        display: block;
+        background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+      }
+    }
+  }
+
+  .images{
+    max-width: 40%;
+    width: 100%;
+    position: relative;
+    img{
+      max-width:350px;
+      max-height: 520px;
+      height: 100vh;
+      position: absolute;
+      top: -120px;
+      filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  .description_denim_booty{
+    text-align: center;
+    p{
+      font-family: $fontsCaveat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 24px;
+      color: #000000;
+    }
+  }
 }

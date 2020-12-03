@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+.container{
+  max-width: 900px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+$fontsCaveat : 'Caveat', cursive;
+$fontsComfortaa : 'Comfortaa', cursive;
+$fontsInter : 'Inter', sans-serif;

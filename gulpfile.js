@@ -18,15 +18,15 @@ var gtag = require('gulp-gtag');
 
 //Порядок подключения css файлов
 const cssFiles = [
-    'node_modules/slick-carousel/slick/slick.css',
     './src/scss/normalize.css',
-   './src/scss/*.scss',
+   './src/scss/style.scss',
+   './src/scss/header.scss',
+   './src/scss/main.scss',
+   './src/scss/footer.scss',
 
 ];
 //Порядок подключения js файлов
 const jsFiles = [
-    // 'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.min.js',
    './src/js/customs.js',
 ];
 
