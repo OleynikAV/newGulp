@@ -1,11 +1,6 @@
-$fontsCaveat : 'Caveat', cursive;
-$fontsComfortaa : 'Comfortaa', cursive;
-$fontsInter : 'Inter', sans-serif;
-$bgColor : linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
-$bgColor : linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
-header{
+@import "style";
  .bg-header{
-   background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+   background: $bgColor;
    max-height: 320px;
    height: 100vh;
  }
@@ -24,7 +19,7 @@ header{
         vertical-align: bottom;
       }
     }
-    .phone{
+    .callback{
       margin: 0;
       text-align: center;
       a{
@@ -42,6 +37,16 @@ header{
         border: solid 1px #ffffff;
         border-radius: 30px;
         filter: drop-shadow(0px 7px 20px rgba(243, 65, 150, 0.25));
+      }
+      &:hover{
+        border-radius: 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+        a{
+          background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
   }
@@ -65,23 +70,32 @@ header{
         font-size: 14px;
         line-height: 16px;
       }
+      .denim_booty_title{
+        text-transform: uppercase;
+      }
   }
 
   .total{
     text-align: center;
     max-width: 60%;
     width: 100%;
+    margin-top: 10px;
     p{
       font-family: $fontsComfortaa;
       font-style: normal;
       font-weight: normal;
       font-size: 64px;
       line-height: 71px;
-      color: #ED2C68;
+      color: $textColor_pink;
       margin: 0;
+
+    }
+    .currency{
+      font-size: 36px;
+      line-height: 36px;
     }
     svg{
-      margin-top: 40px;
+      margin-top: 20px;
     }
     .delivery{
       font-family: $fontsInter;
@@ -104,7 +118,7 @@ header{
       font-size: 18px;
       line-height: 20px;
       color: #FFFFFF;
-      background: linear-gradient(80.88deg,#FC5C7A 98.74%,#E91E63 1.97%);
+      background: $bgColor;
       padding: 2px;
       box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
       border-radius: 30px;
@@ -114,7 +128,12 @@ header{
         height: 100%;
         border-radius: 30px;
         display: block;
-        background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+        background: $bgColor;
+      }
+      &:hover{
+        span,a{
+          background: $bgColorHover;
+        }
       }
     }
   }
@@ -128,7 +147,7 @@ header{
       max-height: 520px;
       height: 100vh;
       position: absolute;
-      top: -120px;
+      top: -150px;
       filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.1));
     }
   }
@@ -143,5 +162,48 @@ header{
       line-height: 24px;
       color: #000000;
     }
+  }
+
+.swiper-container {
+  max-height: 400px;
+  height: 100vh;
+  .swiper-slide{
+    text-align: left;
+    max-width: 320px;
+
+  }
+  img{
+    max-width: 255px;
+    max-height: 305px;
+    width: 100vw;
+    height: 100vh;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.1));
+  }
+  .swiper-button-prev,.swiper-button-next{
+    display: block;
+    right: 0;
+    left: auto;
+    width: auto;
+    margin: 0;
+    top: auto;
+    bottom: 10px;
+    &:after{
+      content: none;
+    }
+    svg{
+      transition: 0.3s;
+      opacity: 0.5;
+    }
+    &:hover{
+      svg{
+        opacity: 1;
+      }
+    }
+  }
+  .swiper-button-next{
+    right: 300px;
+  }
+  .swiper-button-prev{
+    right: 490px;
   }
 }

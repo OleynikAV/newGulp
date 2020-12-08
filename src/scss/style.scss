@@ -1,15 +1,16 @@
 *{
   box-sizing: border-box;
+  outline: none;
 }
 html{
   scroll-behavior: smooth;
 }
 body {
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 300vh;
 }
 .container{
-  max-width: 900px;
+  max-width: 1100px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -26,3 +27,16 @@ body {
 $fontsCaveat : 'Caveat', cursive;
 $fontsComfortaa : 'Comfortaa', cursive;
 $fontsInter : 'Inter', sans-serif;
+$bgColor : linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+$bgColorWhite : #ffffff;
+$bgColorGray : #f9f4f4;
+$bgColorHover : linear-gradient(80.88deg, #FC5C7A 1.97%, #E91E63 98.74%);
+$bgColorFigure: #fe859c;
+$textColor_pink: #ED2C68;
+$textColor_Gray: #878787;
+$textColor_burgundy: #7C3A3A;
+$textColor_burgundy_tub: #835E5E;
+$textColor_green: #30B03D;
+$textColor_black: #000000;
+$textColor_black_tub: #0F0F0F;
+

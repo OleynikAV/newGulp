@@ -18,7 +18,8 @@ var gtag = require('gulp-gtag');
 
 //Порядок подключения css файлов
 const cssFiles = [
-    './src/scss/normalize.css',
+    'node_modules/normalize.css/normalize.css',
+    'node_modules/swiper/swiper-bundle.min.css',
    './src/scss/style.scss',
    './src/scss/header.scss',
    './src/scss/main.scss',
@@ -27,6 +28,9 @@ const cssFiles = [
 ];
 //Порядок подключения js файлов
 const jsFiles = [
+   'node_modules/jquery/dist/jquery.min.js',
+   'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
+   'node_modules/swiper/swiper-bundle.min.js',
    './src/js/customs.js',
 ];
 
@@ -82,7 +86,7 @@ function clean() {
 function watch() {
    browserSync.init({
       server: {
-          baseDir: ["src", "build"]
+          baseDir: ["src","build"]
       }
   });
   //Следить за CSS файлами
@@ -109,7 +113,6 @@ function images(){
 }
 
 let fontList = [
-    'node_modules/slick-carousel/slick/fonts/*',
     'src/fonts/**/*'
 ];
 

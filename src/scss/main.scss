@@ -1,3 +1,550 @@
-main{
+@import "style";
+  .description_main_section{
+    max-width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 90px;
+    p{
+      font-family: $fontsCaveat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  .main_section_bg{
+    background:$bgColor;
+  }
+  .main_left_section,.main_right_section{
+    max-width: 50%;
+    width: 100vw;
+  }
+  .main_left_section{
+    position: relative;
+    img{
+      max-width: 540px;
+      max-height: 540px;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: -170px;
+    }
+  }
+  .main_right_section{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    p,span{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+    span{
+      font-family: $fontsInter;
+      line-height: 22px;
+      color: #C5C5C5;
+    }
+    form{
+      margin-top: 50px;
+      input,button{
+        max-width: 345px;
+        width: 100%;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        padding-left: 20px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        color: #766A6A;
+        outline: none;
+        border: none;
+      }
+      button{
+        transition: background 0.3s;
+        background: transparent;
+        border: 1px solid #ffffff;
+        margin-top: 25px;
+        span{
+          font-family: $fontsComfortaa;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 20px;
+          color: #FFFFFF;
+        }
+        &:hover{
+          transition: background 0.3s;
+          background: #ffffff;
+          box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+          span{
+            color: #FE859C;
+          }
+        }
+        &:focus{
+          border-color:#FE859C;
+          background: transparent;
+          span{
+            color: #FE859C;
+          }
+        }
+        &:active{
+          box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+          background: #ffffff;
+         span{
+           background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+         }
+        }
+      }
+    }
+    .tub_social_text{
+      font-family: $fontsCaveat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF;
 
+    }
+    .social_link_main{
+      div{
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+  }
+  .bg_video{
+    background: $bgColorGray;
+    padding-bottom: 32px;
+  }
+  .block_description_video{
+    text-align: center;
+    max-width: 33%;
+    width: 100%;
+    margin: 90px auto 0;
+  }
+  .description_video_figure{
+    max-width: 100px;
+    width: 100vw;
+    max-height: 100px;
+    height: 100vh;
+    background: $bgColorFigure;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    svg{
+      margin-top: 25px;
+    }
+    .pants{
+      margin-top: 40px;
+    }
+  }
+  .description_video_text{
+    p{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      color: $textColor_burgundy;
+    }
+    span{
+      font-family: $fontsInter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: $textColor_burgundy_tub;
+    }
+  }
+  .video{
+    text-align: center;
+    margin-top: 32px;
+    img{
+      max-width: 730px;
+      max-height: 420px;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  .bg_section{
+    background: #ffffff;
+    padding: 30px 0;
+  }
+  .store{
+    text-align: center;
+    h2{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 27px;
+      color: #483F42;
+    }
+    .store_description_images{
+      max-width: 730px;
+      max-height: 300px;
+      width: 100%;
+      height: 100%;
+    }
+    .store_description_summa{
+      max-width: 350px;
+      width: 100%;
+      text-align: center;
+      p,span{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 71px;
+        color: $textColor_pink;
+        margin-bottom: 0;
+      }
+      .currency{
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+    .store_description_size{
+      p{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        color: $textColor_burgundy;
+      }
+      form{
+        .size_label{
+          font-family: $fontsComfortaa;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 48px;
+          line-height: 54px;
+          color: #000000;
+          opacity: 0.25;
+          cursor: pointer;
+          position: relative;
+          padding-left: 10px;
+          display: inline-block;
+          border-bottom: 4px solid transparent;
+          input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+        }
+        .select_size{
+          color: #4F3C3C;
+          opacity: 1;
+          border-bottom-color:$textColor_pink;
+        }
+        a{
+          margin-top: 35px;
+          svg{
+            margin-right: 10px;
+          }
+          text-decoration: none;
+          display: block;
+          font-family: $fontsInter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: $textColor_green;
+        }
+        .amount_label{
+          opacity: 1;
+          padding: 0;
+          .amount,span{
+            opacity: 1;
+            width: 95px;
+            text-align: center;
+            font-family:$fontsComfortaa;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            color: $textColor_pink;
+            border: none;
+            padding-left: 15px;
+          }
+          span{
+            color: #000000;
+            opacity: 0.25;
+            padding-left: 0;
+          }
+        }
+        .amount_row{
+          justify-content: center;
+          margin-top: 30px;
+        }
+        .stepDown,.stepUp{
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+        }
+        .amount_button{
+          max-width: 285px;
+          width: 100%;
+          height: 50px;
+          border-radius: 30px;
+          transition: background 0.3s;
+          background:$bgColor;
+          border: 1px solid #ffffff;
+          margin-top: 25px;
+            span{
+              font-family: $fontsComfortaa;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 20px;
+              color: #FFFFFF;
+              background-color: $bgColorHover;
+            }
+            &:hover{
+              background: #FFFFFF;
+              transition: background 0.3s;
+              box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+              span{
+                color: $bgColorFigure;
+              }
+            }
+            &:focus{
+              border-color:$bgColorFigure;
+              background: transparent;
+              span{
+                color: $bgColorFigure;
+              }
+            }
+            &:active{
+              box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+              background: #ffffff;
+              span{
+                background: $bgColor;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+      }
+    }
+  }
+  .bg_gift{
+    background: $bgColorGray;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .gift{
+    .gift_title{
+      text-align: center;
+      h3{
+        font-family: $fontsCaveat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 98.5%;
+        color: $textColor_black;
+        margin-top: 0;
+      }
+    }
+    .gift_slider{
+      p{
+        text-align: center;
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: $textColor_black_tub;
+      }
+    }
+    .swiper-slide_gift{
+      max-width: 350px;
+      width: 100vw;
+      max-height: 425px;
+      height: 100vh;
+      background:$bgColor;
+      border-radius: 20px;
+      text-align: center;
+      margin: 55px  auto 0;
+      p,span{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        .currency{
+          font-size: 36px;
+          line-height: 36px;
+        }
+      }
+      svg{
+        margin-top: 30px;
+      }
+      .summa{
+        font-size: 48px;
+        line-height: 54px;
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+      .currency{
+        line-height: 16px;
+        font-size: 24px;
+      }
+    }
+    .slide_gift_center{
+      max-height: 480px;
+      margin-top: 0;
+      p{
+        margin-top: 45px;
+      }
+      svg{
+        margin-top: 25px;
+      }
+      .summa{
+        margin-top: 85px;
+      }
+    }
+
+  }
+  .bg_panties{
+    background: $bgColorWhite;
+    padding-bottom: 30px;
+  }
+  .panties_description{
+    text-align: center;
+    h3{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 27px;
+      color: #483F42;
+    }
+  }
+  .panties_description_block{
+    margin: 0 auto;
+    max-width: 33.3%;
+    .panties_block_images{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: $bgColorFigure;
+      text-align: center;
+      padding-top: 20px;
+      margin: 0 auto;
+    }
+    .panties_block_wrap{
+      text-align: center;
+      p{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        color: $textColor_burgundy;
+      }
+      span{
+        font-family: $fontsInter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $textColor_burgundy_tub;
+      }
+   }
+  }
+  .bg_reviews{
+    background: $bgColorGray;
+    padding: 30px 0;
+  }
+  .reviews_title{
+    text-align: center;
+    h4{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: $textColor_burgundy;
+      margin-top: 0;
+    }
+  }
+.swiper-container-reviews{
+  position: relative;
+  margin: 0 auto;
+  max-width: 750px;
+  height: auto;
+  .swiper-button-prev,.swiper-button-next{
+    &:after{
+      content: ' ';
+    }
+  }
+  .swiper-button-prev-reviews{
+    left: 0;
+  }
+  .swiper-button-next-reviews{
+    right: 0;
+  }
+  .swiper-pagination-reviews{
+    text-align: center;
+  }
+  .swiper-slide{
+    margin: 0 auto;
+    text-align: center;
+    img{
+      border-radius: 50%;
+      max-width: 76px;
+      width: 100vw;
+      max-height: 76px;
+      height: 100vh;
+    }
+    .swiper-slide_title{
+      font-family: $fontsCaveat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 18px;
+      color: $textColor_pink;
+    }
+    .swiper-slide_text{
+      font-family: $fontsInter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 13px;
+      color: $textColor_Gray;
+    }
+  }
+  .swiper-pagination-bullet{
+    background: #ffffff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background: $bgColor;
+  }
 }
+
+
+
+
+
+
+
