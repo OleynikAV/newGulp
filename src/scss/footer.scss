@@ -1,3 +1,26 @@
-footer{
-
+@import "style";
+.contacts{
+  text-align: center;
+  h3{
+    font-family: $fontsCaveat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  p,span{
+    font-family: $fontsComfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  span{
+    font-family: $fontsInter;
+    line-height: 17px;
+    color: #C5C5C5;
+  }
 }

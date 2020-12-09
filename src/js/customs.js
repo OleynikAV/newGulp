@@ -1,9 +1,17 @@
 let mySwiper = new Swiper('.swiper-container', {
-    effect:"slide",
-    cssMode: true,
-    slidesPerView: 4,
+    direction: 'horizontal',
     freeMode: true,
+    slidesPerView: 4,
+    initialSlide: 0,
     loop:true,
+    spaceBetween: 0,
+    preloadImages:false,
+    lazy: {
+        loadOnTransitionStart:false,
+        loadPrevNext: false,
+    },
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -11,12 +19,14 @@ let mySwiper = new Swiper('.swiper-container', {
     },
 })
 $(window).on('resize',function() {
-    $('.mySwiper').init();
-    $('.mySwiper_gift').init();
+   mySwiper.init();
+    mySwiper_reviews.init();
+    mySwiper_gift.init();
 
 });
 
 $('#number_phone').mask('+38(000) 00-00-000',{'translation': {0: {pattern: /[0-9]/}}});
+$('#number_phone_main').mask('+38(000) 00-00-000',{'translation': {0: {pattern: /[0-9]/}}});
 
 $('.checkbox_size:checkbox').click(function(){
     if ($(this).is(':checked')) {
@@ -45,10 +55,9 @@ let mySwiper_gift = new Swiper('.swiper-container_gift', {
 })
 let mySwiper_reviews = new Swiper('.swiper-container-reviews', {
     // Optional parameters
-    cssMode: true,
     loop: true,
-    freeMode:true,
     slidesPerView: 1,
+    initialSlide: 0,
     pagination: {
         el: '.swiper-pagination-reviews',
         type: 'bullets',
@@ -58,4 +67,8 @@ let mySwiper_reviews = new Swiper('.swiper-container-reviews', {
         prevEl: '.swiper-button-prev',
     },
     mousewheel: false,
+})
+
+$('.popup_callback_button').on('click', function (){
+    $('.popup_callback').hide(500)
 })

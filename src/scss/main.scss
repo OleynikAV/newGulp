@@ -13,9 +13,6 @@
       line-height: 30px;
     }
   }
-  .main_section_bg{
-    background:$bgColor;
-  }
   .main_left_section,.main_right_section{
     max-width: 50%;
     width: 100vw;
@@ -28,13 +25,12 @@
       width: 100vw;
       height: 100vh;
       position: absolute;
-      top: -170px;
+      top: -190px;
     }
   }
   .main_right_section{
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 15px;
+    position: relative;
     p,span{
       font-family: $fontsComfortaa;
       font-style: normal;
@@ -116,16 +112,53 @@
       color: #FFFFFF;
 
     }
-    .social_link_main{
+    .social_link{
       div{
         display: inline-block;
         margin: 0 10px;
       }
     }
+    .popup_callback{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $bgColorGray;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      border-radius: 30px;
+      p{
+        font-family:$fontsCaveat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 98.5%;
+        color: #000000;
+        margin: 0;
+        margin-top: 60px;
+      }
+      .popup_callback_button{
+        cursor: pointer;
+        max-width: 250px;
+        width: 100%;
+        height: 50px;
+        padding-top: 5px;
+        background: $bgColorPink;
+        border: 4px solid $textColor_pink;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 30px;
+        &:hover{
+          background: $bgColorHover;
+        }
+      }
+    }
   }
-  .bg_video{
+  .bg_gray{
     background: $bgColorGray;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
   .block_description_video{
     text-align: center;
@@ -304,7 +337,7 @@
           height: 50px;
           border-radius: 30px;
           transition: background 0.3s;
-          background:$bgColor;
+          background:$bgColorPink;
           border: 1px solid #ffffff;
           margin-top: 25px;
             span{
@@ -335,7 +368,7 @@
               box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
               background: #ffffff;
               span{
-                background: $bgColor;
+                background: $bgColorPink;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
               }
@@ -344,7 +377,7 @@
       }
     }
   }
-  .bg_gift{
+  .bg_grays{
     background: $bgColorGray;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -378,7 +411,7 @@
       width: 100vw;
       max-height: 425px;
       height: 100vh;
-      background:$bgColor;
+      background:$bgColorPink;
       border-radius: 20px;
       text-align: center;
       margin: 55px  auto 0;
@@ -471,10 +504,6 @@
       }
    }
   }
-  .bg_reviews{
-    background: $bgColorGray;
-    padding: 30px 0;
-  }
   .reviews_title{
     text-align: center;
     h4{
@@ -492,6 +521,7 @@
   margin: 0 auto;
   max-width: 750px;
   height: auto;
+  overflow: hidden;
   .swiper-button-prev,.swiper-button-next{
     &:after{
       content: ' ';
@@ -538,8 +568,66 @@
     opacity: 1;
   }
   .swiper-pagination-bullet-active{
-    background: $bgColor;
+    background: $bgColorPink;
   }
+}
+.main_form{
+  width: 100%;
+  margin: 0 auto;
+}
+.other_models{
+  text-align: center;
+  .other_models_title{
+    font-family: $fontsComfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #483F42;
+  }
+  .space_between{
+    justify-content: space-between;
+  }
+  .models{
+    text-align: center;
+    img{
+      max-width: 255px;
+      width: 100vw;
+      max-height: 405px;
+      height: 100vh;
+    }
+    h3{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      color: $textColor_burgundy;
+    }
+    p{
+      font-family: $fontsInter;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: $textColor_burgundy_tub;
+
+    }
+    .summa{
+      font-family: $fontsComfortaa;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 40px;
+      color: $textColor_pink;
+      span{
+        font-size: 14px;
+
+      }
+
+    }
+  }
+
 }
 
 
