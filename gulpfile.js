@@ -13,6 +13,7 @@ var useref = require('gulp-useref');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var gtag = require('gulp-gtag');
+const ftp = require('vinyl-ftp');
 
 
 
@@ -126,6 +127,23 @@ function gtagFunc(){
         .pipe(gtag({uid: 'UA-153778930-4'}))
         .pipe(gulp.dest('build/'));
 }
+gulp.task('deploy', function() {
+    const conn = ftp.create({
+        host:      'mememe.uastar.space',
+        user:      'mememe-ftp',
+        password:  '2jEArc39kkP2bfmC',
+        parallel:  10,
+        log: 'ftp.log',
+
+    });
+
+    const globs = [
+        'build/**',
+    ];
+    return gulp.src(globs, {buffer: false})
+        .pipe(conn.dest('/html/'));/* url hosting*/
+});
+
 //Таск вызывающий функцию styles
 gulp.task('styles', styles);
 //Таск вызывающий функцию scripts

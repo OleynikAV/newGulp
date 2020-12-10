@@ -40,6 +40,7 @@
     margin-top: 35px;
   }
   .social_link{
+    position: relative;
     margin-top: 20px;
     div{
       display: inline-block;
@@ -79,6 +80,57 @@
       }
     }
   }
+  .popup_callback_header{
+    display: none;
+    max-width: 690px;
+    width: 100vw;
+    max-height: 390px;
+    height: 100vh;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background: linear-gradient(153.2deg, #FFFFFF 1.95%, #F9F4F4 97.61%);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    .main_right_section{
+      max-width: 100%;
+      height: 100%;
+      p{
+        color: #483F42;
+        font-weight: bold;
+      }
+      span{
+        color: $textColor_burgundy_tub;
+      }
+      form{
+        input{
+          border: 1px solid #F2EAEA;
+        }
+        button{
+          background: linear-gradient(80.88deg,#e91e63 1.97%,#fc5c7a 98.74%);
+          box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+        }
+        span{
+          color: #ffffff;
+        }
+      }
+    }
+    .callback_header_title{
+      position: relative;
+    }
+    .callback_header_close{
+      position: absolute;
+      right: 35px;
+      top: 0;
+      cursor: pointer;
+    }
+    #popup_callback_three{
+      top: -20px;
+    }
+  }
 
   .denim_booty{
       text-align: center;
@@ -103,7 +155,9 @@
         text-transform: uppercase;
       }
   }
-
+  .relative_popup{
+    position: relative;
+  }
   .total{
     text-align: center;
     max-width: 60%;
@@ -165,6 +219,300 @@
         }
       }
     }
+  }
+
+  .popup_buy{
+    display:none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    max-width: 690px;
+    width: 100vw;
+    max-height: 485px;
+    height: 100vh;
+    transition: max-height 0.3s;
+    background: linear-gradient(153.2deg, #FFFFFF 1.95%, #F9F4F4 97.61%);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    .main_right_section{
+      max-width: 100%;
+      height: 100%;
+      p{
+        color: #483F42;
+        font-weight: bold;
+      }
+      span{
+        color: $textColor_burgundy_tub;
+      }
+      form{
+        input{
+          border: 1px solid #F2EAEA;
+        }
+        button{
+          background: linear-gradient(80.88deg,#e91e63 1.97%,#fc5c7a 98.74%);
+          box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+        }
+        span{
+          color: #ffffff;
+        }
+      }
+      .popup_buy_checkbox_text{
+        font-family: $fontsInter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color:$textColor_green;
+
+      }
+      .popup_buy_form{
+        margin-top: 0;
+      }
+    }
+    .callback_header_title{
+      position: relative;
+    }
+    .callback_header_close{
+      position: absolute;
+      right: 35px;
+      top: 0;
+      cursor: pointer;
+    }
+    #popup_callback_foo{
+      top: -20px;
+    }
+    .switch {
+      margin-top: 25px;
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+      border-radius:30px;
+    }
+
+    .switch input {display:none;}
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ffffff;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: $checkboxButton;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    input:checked .slider:before{
+      background-color: #007aff;
+    }
+    input:checked + .slider {
+      background-color: #ffffff;
+    }
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+      background-color: $textColor_pink;
+    }
+
+    .slider.round {
+      border-radius: 30px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    .store_description{
+      display: none;
+    }
+    .store_description_images{
+      max-width: 65%;
+      img{
+        width: 100%;
+        max-height: 230px;
+        height: 100vh;
+      }
+    }
+    .store_description_summa{
+      max-width: 35%;
+      width: 100vw;
+      p,span{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 71px;
+        color: $textColor_pink;
+        margin-bottom: 0;
+      }
+      .currency{
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+    .store_description_size{
+      p{
+        font-family: $fontsComfortaa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        color: $textColor_burgundy;
+      }
+      form{
+        margin-top: 0;
+        .size_label{
+          font-family: $fontsComfortaa;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 48px;
+          line-height: 54px;
+          color: #000000;
+          opacity: 0.25;
+          cursor: pointer;
+          position: relative;
+          padding-left: 10px;
+          display: inline-block;
+          border-bottom: 4px solid transparent;
+          input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+        }
+        .select_size{
+          color: #4F3C3C;
+          opacity: 1;
+          border-bottom-color:$textColor_pink;
+        }
+        a{
+          margin-top: 25px;
+          svg{
+            margin-right: 10px;
+          }
+          text-decoration: none;
+          display: block;
+          font-family: $fontsInter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: $textColor_green;
+        }
+        .amount_label{
+          opacity: 1;
+          padding: 0;
+          br{
+            display: none;
+          }
+          .amount,span{
+            opacity: 1;
+            width: 95px;
+            text-align: center;
+            font-family:$fontsComfortaa;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            color: $textColor_pink;
+            border: none;
+            padding-left: 15px;
+          }
+          span{
+            color: #000000;
+            opacity: 0.25;
+            padding-left: 0;
+          }
+        }
+        .amount_row{
+          justify-content: center;
+          margin-top: 15px;
+        }
+        .stepDown,.stepUp{
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          margin-top: 0;
+        }
+        .stepDown{
+          margin-left: auto;
+          margin-right: 25px;
+        }
+        .stepUp{
+          margin-right: auto;
+          margin-left: 25px;
+        }
+        .amount_button{
+          max-width: 285px;
+          width: 100%;
+          height: 50px;
+          border-radius: 30px;
+          transition: background 0.3s;
+          background:$bgColorPink;
+          border: 1px solid #ffffff;
+          margin-top: 30px;
+          span{
+            font-family: $fontsComfortaa;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            color: #FFFFFF;
+            background-color: $bgColorHover;
+          }
+          &:hover{
+            background: #FFFFFF;
+            transition: background 0.3s;
+            box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+            span{
+              color: $bgColorFigure;
+            }
+          }
+          &:focus{
+            border-color:$bgColorFigure;
+            background: transparent;
+            span{
+              color: $bgColorFigure;
+            }
+          }
+          &:active{
+            box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+            background: #ffffff;
+            span{
+              background: $bgColorPink;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .popup_buy_checked{
+    transition: 0.3s;
+    max-height: 700px;
   }
 
   .images{
