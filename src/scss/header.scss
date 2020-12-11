@@ -186,7 +186,7 @@
       line-height: 22px;
       color: #30B03D;
     }
-    a{
+    .amount_button_header{
       margin-top: 70px;
       margin-left: auto;
       margin-right: auto;
@@ -206,6 +206,7 @@
       box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
       border-radius: 30px;
       display: block;
+      cursor: pointer;
       span{
         padding-top: 12px;
         height: 100%;
@@ -251,6 +252,7 @@
         button{
           background: linear-gradient(80.88deg,#e91e63 1.97%,#fc5c7a 98.74%);
           box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+          border-color: transparent;
         }
         span{
           color: #ffffff;
@@ -470,7 +472,6 @@
           border-radius: 30px;
           transition: background 0.3s;
           background:$bgColorPink;
-          border: 1px solid #ffffff;
           margin-top: 30px;
           span{
             font-family: $fontsComfortaa;
@@ -545,6 +546,8 @@
 .swiper-container {
   max-height: 400px;
   height: 100vh;
+  max-width: 1150px;
+  overflow: visible;
   .swiper-slide{
     text-align: center;
   }
@@ -580,9 +583,12 @@
     }
   }
   .swiper-button-next{
-    right: 300px;
+    right: 170px;
   }
   .swiper-button-prev{
-    right: 490px;
+    right: 350px;
   }
+}
+.overflow-swiper{
+  overflow: hidden;
 }

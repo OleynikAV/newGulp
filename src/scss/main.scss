@@ -218,6 +218,7 @@
   }
   .store{
     text-align: center;
+    position: relative;
     h2{
       font-family: $fontsComfortaa;
       font-style: normal;
@@ -332,6 +333,16 @@
           border-radius: 50%;
           width: 40px;
           height: 40px;
+          &:hover{
+            transition: background .3s;
+            background: #fff;
+          }
+          &:active{
+            background: #fff;
+            box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+          }
+
         }
         .amount_button{
           max-width: 285px;
@@ -379,6 +390,55 @@
       }
     }
   }
+  .popup_buy_main{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    .store_description_images{
+      width: 65%;
+      img{
+        width: 100%;
+        max-height: 230px;
+        height: 100vh;
+      }
+    }
+    .store_description_summa{
+      max-width: 35%;
+      width: 100%;
+    }
+    .store_description_size{
+      form{
+        a{
+          margin-top: 25px;
+        }
+        .amount_row{
+          margin-top: 15px;
+          .stepDown,.stepUp{
+            background: $bgColorPink;
+            box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+            border-color: transparent;
+            &:hover{
+              box-shadow: 0px 7px 20px rgba(243, 65, 150, 0.25);
+              background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+            }
+            &:active{
+              box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+              background: #ffffff;
+              span{
+                background: linear-gradient(80.88deg, #E91E63 1.97%, #FC5C7A 98.74%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+        .amount_button{
+          border-color: transparent;
+        }
+      }
+
+    }
+  }/*popup_buy_main*/
   .bg_grays{
     background: $bgColorGray;
     padding-bottom: 30px;
@@ -587,8 +647,10 @@
     line-height: 40px;
     color: #483F42;
   }
-  .space_between{
-    justify-content: space-between;
+  .swiper-container-other_models{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
   .models{
     text-align: center;
