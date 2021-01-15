@@ -20,20 +20,15 @@ const ftp = require('vinyl-ftp');
 //Порядок подключения css файлов
 const cssFiles = [
     'node_modules/normalize.css/normalize.css',
-    'node_modules/swiper/swiper-bundle.min.css',
    './src/scss/style.scss',
    './src/scss/header.scss',
    './src/scss/main.scss',
    './src/scss/footer.scss',
-   './src/scss/payment.scss',
 
 ];
 //Порядок подключения js файлов
 const jsFiles = [
    'node_modules/jquery/dist/jquery.min.js',
-   'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
-   'node_modules/jquery-validation/dist/jquery.validate.min.js',
-   'node_modules/swiper/swiper-bundle.min.js',
    './src/js/customs.js',
 ];
 
