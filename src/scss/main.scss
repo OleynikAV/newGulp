@@ -1,7 +1,11 @@
 @import "style";
 .--search{
+  margin-top: 70px;
+  margin-bottom: 60px;
+  label{
+    position: relative;
+  }
   input{
-    margin-top: 70px;
     max-width: 1170px;
     width: 100%;
     height: 70px;
@@ -17,16 +21,23 @@
     color: #90979F;
     border: none;
     box-shadow: $SectionBshwColor;
-
+    &::-webkit-search-cancel-button{
+      -webkit-appearance: none;
+    }
   }
-  &:before{
-    content: " ";
-    width: 42px;
-    height: 40px;
+  button{
+    border: none;
+    background: none;
     position: absolute;
-    background-image: url('../images/search.png');
-    top: 0;
+    top: -5px;
+    right: 30px;
+    cursor: pointer;
+    svg{
+      width: 30px;
+      height: 30px;
+    }
   }
+
 }
 .--input-amount{
   border-bottom:1px solid $FontsInputColorBorder ;
@@ -55,6 +66,9 @@
     border: none;
     text-transform: uppercase;
     text-align: center;
+    &::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+    }
 
   }
   .--input-description{
@@ -323,6 +337,9 @@
     text-transform: uppercase;
     color: $FontsColor--input;
     text-align: center;
+    &::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+    }
 
   }
 }
@@ -401,5 +418,5 @@
   color: $FontsColorWhiteType2;
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
 }
