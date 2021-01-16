@@ -23,8 +23,10 @@ const cssFiles = [
    './src/scss/style.scss',
    './src/scss/header.scss',
    './src/scss/main.scss',
+    './src/scss/aside.scss',
    './src/scss/footer.scss',
-   './src/scss/aside.scss',
+   './src/scss/media.scss',
+
 
 ];
 //Порядок подключения js файлов

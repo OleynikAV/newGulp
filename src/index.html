@@ -61,22 +61,26 @@
                     <div class="--token-amount --input-amount">
                         <label class="--input-description" for="--token-pair">
                             <p>Token Amount:</p>
-                            <input id="--token-amount"  type="number" name="Token Amount" placeholder="#___">
+                            <input id="--token-amount"  type="text" name="Token Amount" placeholder="#___">
                         </label>
                     </div><!--token-amount-->
                     <div class="--token-pair --input-amount">
                         <label class="--input-description" for="--token-pair">
                             <p>ETH Amount:</p>
-                            <input id="--eth-amount" class="--token-pair" type="number" name="ETH Amount" placeholder="#___">
+                            <input id="--eth-amount" class="--token-pair" type="text" name="ETH Amount" placeholder="#___">
                         </label>
                     </div><!--token-pair-->
-                    <div class="container-flex__row --justify-center">
-                        <div class="text-switch-toggle "><p>Uniswap</p></div>
+                    <div class="container-flex__row --justify-center --margin-top-mobile">
+                        <div class="text-switch-toggle ">
+                            <p class="--title-switch-toggle">Uniswap</p>
+                        </div>
                         <div class="input-switch-toggle --align-items-center">
                             <input type="checkbox" id="cbx"/>
                             <label for="cbx" class="toggle"><span></span></label>
                         </div>
-                        <div class="text-switch-toggle --text-toggle-select"><p>SushiSwap</p></div>
+                        <div class="text-switch-toggle">
+                            <p class="--title-switch-toggle --text-toggle-select">SushiSwap</p>
+                        </div>
                     </div><!--container-flex__row-->
                     <div class="container-flex__row">
 
@@ -96,7 +100,7 @@
                                 </div>
                                 <div class="block--section-input">
                                     <label for="--buy-price-amount">
-                                        <input id="--buy-price-amount" name="buy amout price" type="number" placeholder="$ 0.69">
+                                        <input id="--buy-price-amount" name="buy amout price" type="text" placeholder="$ 0.69">
                                     </label>
                                 </div>
                             </div>
@@ -114,7 +118,7 @@
                                 </div>
                                 <div class="block--section-input">
                                     <label for="--buy-percent-up">
-                                        <input id="--buy-percent-up" type="number" name="buy percent up" placeholder="___%">
+                                        <input id="--buy-percent-up" type="text" name="buy percent up" placeholder="___%">
                                     </label>
                                 </div>
                             </div>
@@ -132,7 +136,7 @@
                                 </div>
                                 <div class="block--section-input">
                                     <label for="--buy-percent-down">
-                                        <input id="--buy-percent-down" type="number" name="but percent down" placeholder="___%">
+                                        <input id="--buy-percent-down" type="text" name="but percent down" placeholder="___%">
 
                                     </label>
                                 </div>
@@ -156,7 +160,7 @@
                                 </div>
                                 <div class="block--section-input">
                                     <label for="--self-price-amount">
-                                        <input id="--self-price-amount" type="number" name="self price amount" placeholder="$ 0.69">
+                                        <input id="--self-price-amount" type="text" name="self price amount" placeholder="$ 0.69">
 
                                     </label>
                                 </div>
@@ -203,29 +207,44 @@
                     </div><!--container-flex__row-->
                     <div class="form--footer">
                         <div class="container-flex__row form-footer--indent-top">
-                            <div class="input-switch-toggle --align-items-center">
-                                <input type="checkbox" id="cbx_eight"/>
-                                <label for="cbx_eight" class="toggle"><span></span></label>
+                            <div class="form--footer-block">
+                                <div class="container-flex__row">
+                                    <div class="input-switch-toggle --align-items-center">
+                                        <input type="checkbox" id="cbx_eight"/>
+                                        <label for="cbx_eight" class="toggle"><span></span></label>
+                                    </div>
+                                    <div class="--input-switch-toggle-title --text-capitalize">
+                                        <p>Cap Gas Cost At</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="--input-switch-toggle-title --text-lower-case">
-                                <p>Cap Gas Cost At</p>
+                            <div class="form--footer-block form-footer--gwei">
+                                    <div class="container-flex__row">
+                                        <div class="form-footer--input">
+                                            <label for="--input-footer-gwei">
+                                                <input  id="--input-footer-gwei" type="text" name="gwe" placeholder="XXX">
+                                            </label>
+                                        </div>
+                                        <div class="form-footer-input--title">
+                                            <p>GWEI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="form--footer-block " id="--form-adp-margin">
+                                <div class="container-flex__row">
+                                    <div class="input-switch-toggle --align-items-center" >
+                                        <input type="checkbox" id="cbx_nine"/>
+                                        <label for="cbx_nine" class="toggle"><span></span></label>
+                                    </div>
+                                    <div class="--input-switch-toggle-title --text-capitalize --text-capitalize-mobile">
+                                        <p>Dynamic Transaction Threshold</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-footer--gwei --align-items-center">
-                                <label for="--input-footer-gwei">
-                                    <input  id="--input-footer-gwei" type="text" name="gwe" placeholder="XXX">
-                                </label>
-                                <p>GWEI</p>
-                            </div>
-                            <div class="input-switch-toggle --align-items-center">
-                                <input type="checkbox" id="cbx_nine"/>
-                                <label for="cbx_nine" class="toggle"><span></span></label>
-                            </div>
-                            <div class="--input-switch-toggle-title --text-capitalize">
-                                <p>Dynamic Transaction Threshold</p>
-                            </div>
+
+                        </div>
+                        <div class="form-button--block">
                             <button class="form-button" type="submit">START BOT</button>
-
-
                         </div>
 
                     </div><!--form--footer-->
@@ -234,7 +253,7 @@
             </div>
         </div>
     </main>
-    <aside>
+    <aside id="asid--adaptive">
         <div class="aside--head">
             <p>Current <br> Bot Operations</p>
         </div>
@@ -250,8 +269,8 @@
                 <li>Dynamic Threshold: <span>XXXX</span></li>
             </ul>
             <button class="form-button --button-aside">CANCEL</button>
-
         </div>
+
 
     </aside>
     <footer>
